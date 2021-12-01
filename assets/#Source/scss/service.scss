@@ -1,0 +1,54 @@
+.service{
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+.service__foto{
+    flex: 0 1 50%;
+    max-width:683px;
+    max-height: 425px;
+}
+
+
+
+.service__items {
+    flex: 0 1 50%;
+    padding: 70px 0 75px 70px;
+    max-width: 683px;
+    max-height: 425px;
+    background-color: #000;
+}
+
+.service__subtitle {
+    max-width: 200px;
+    margin-bottom: 36px;
+	font-family: 'AkzidenzGrotesk';
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #ffffff;
+}
+
+.service__text{
+    max-width: 310px;
+    margin-bottom: 74px;
+    color: #ffffff;
+}
+
+.service__btn{
+    padding: 15px 36px;
+    background-color: #fff;
+    color: #000;
+}
+
+.service__link{
+    padding: 16px;
+    text-decoration: underline;
+    color: #fff;
+}

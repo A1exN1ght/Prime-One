@@ -1,0 +1,110 @@
+
+
+.contacts{
+    padding-top: 82px;
+}
+
+
+
+.contacts__user-info_text {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 500;
+    color: #959595;
+    
+    padding: 10px;
+    width: 374px;
+
+    background-color: #252525;
+    border: 2px solid #878787;
+}
+
+
+
+.contacts__title{
+    margin-bottom: 32px;
+	font-family: 'AkzidenzGrotesk';
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #000000;}
+
+.contacts__item {
+    display: flex;
+    flex-direction: row;
+}
+
+.contacts__items{
+    flex: 0 1 51%;
+    margin-bottom: 24px;
+}
+.contacts__address{
+    margin-bottom: 20px;
+    color: #000000;
+}
+.contacts__tel{
+    color: #000000;
+}
+
+
+.contacts__social{
+    flex: 0 1 22%;
+}
+
+.contacts__mail{
+    margin-bottom: 28px;
+    color: #000000;
+}
+.contacts__socials{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__section {
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.contacts__map {
+    max-width: 683px;
+    flex: 0 1 50%;
+}
+
+.contacts__user-info {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-between;
+    padding: 50px 0 50px 60px;
+    max-width: 683px;
+    flex: 0 1 50%;
+    background-color: #000;
+}
+
+.contacts__subtitle {
+    color: #ffffff;
+}
+
+.contacts__username {
+    height: 48px;
+}
+
+.contacts__usermail {
+    height: 48px;
+}
+
+.contacts__usermessage {
+    height: 100px;
+}
+
+.contacts__btn {
+    padding: 16px 25px;
+    color: #000000;
+    background-color: #fff;
+}

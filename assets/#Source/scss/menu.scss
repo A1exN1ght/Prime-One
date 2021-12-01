@@ -1,0 +1,40 @@
+.menu {
+    margin: 75px 0;
+}
+
+.menu__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu__column{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.menu__subtitle {
+    max-width: 130px;
+    margin: 25px 0;
+    color: #000000;
+    flex-grow: 1;
+}
+.menu__text{
+    max-width: 190px;
+    margin-bottom: 25px;
+    color: #000000;
+    flex-grow: 1;
+}
+.menu__btn{
+    margin-bottom: 25px;
+    max-width: 160px;
+    padding: 14px 0;
+    text-align: center;
+    background-color: #000;
+    color: #ffffff;
+}
+.menu__link{
+    text-decoration: underline;
+    color: #000000; 
+}

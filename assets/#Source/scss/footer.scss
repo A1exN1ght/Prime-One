@@ -1,0 +1,24 @@
+
+.footer__items {
+    display: flex;
+    height: 126px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__info {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #4d4d4d;
+    align-self: center;
+    & a{
+        text-decoration: underline;
+        color: #4d4d4d;
+    }
+}
+
+.footer__logo {
+    align-self: center;
+}

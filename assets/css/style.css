@@ -1,0 +1,641 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "AkzidenzGrotesk";
+  src: url("../fonts/AkzidenzGrotesk-Cond.eot");
+  src: local("☺"), url("../fonts/AkzidenzGrotesk-Cond.woff") format("woff"), url("../fonts/AkzidenzGrotesk-Cond.ttf") format("truetype"), url("../fonts/AkzidenzGrotesk-Cond.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-color: #fff;
+}
+
+.container {
+  max-width: 870px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-family: "Bebas Neue", cursive;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-family: "AkzidenzGrotesk";
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.text {
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.contacts_fonts {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.header {
+  margin: 30px 0;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__menu-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 27%;
+          flex: 0 1 27%;
+}
+
+.header__lang {
+  margin-bottom: 40px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 16px;
+  line-height: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: underline;
+}
+.header__lang a {
+  margin-right: 15px;
+  color: #000000;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__city-name {
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  font-size: 16px;
+  line-height: 8px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.header__city-name a {
+  color: #000000;
+}
+.header__city-name:first-child {
+  margin-bottom: 15px;
+}
+.header__city-name:last-child {
+  margin-top: 20px;
+}
+
+.header__label {
+  max-width: 220px;
+}
+
+.header__menu-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 27%;
+          flex: 0 1 27%;
+}
+
+.header__ordering {
+  margin-bottom: 40px;
+  text-align: right;
+  font-family: "AkzidenzGrotesk";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.header__ordering a {
+  color: #000000;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "AkzidenzGrotesk";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.header__menu a {
+  color: #000000;
+}
+
+.service {
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.service__foto {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  max-width: 683px;
+  max-height: 425px;
+}
+
+.service__items {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 70px 0 75px 70px;
+  max-width: 683px;
+  max-height: 425px;
+  background-color: #000;
+}
+
+.service__subtitle {
+  max-width: 200px;
+  margin-bottom: 36px;
+  font-family: "AkzidenzGrotesk";
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #ffffff;
+}
+
+.service__text {
+  max-width: 310px;
+  margin-bottom: 74px;
+  color: #ffffff;
+}
+
+.service__btn {
+  padding: 15px 36px;
+  background-color: #fff;
+  color: #000;
+}
+
+.service__link {
+  padding: 16px;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.menu {
+  margin: 75px 0;
+}
+
+.menu__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu__subtitle {
+  max-width: 130px;
+  margin: 25px 0;
+  color: #000000;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.menu__text {
+  max-width: 190px;
+  margin-bottom: 25px;
+  color: #000000;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.menu__btn {
+  margin-bottom: 25px;
+  max-width: 160px;
+  padding: 14px 0;
+  text-align: center;
+  background-color: #000;
+  color: #ffffff;
+}
+
+.menu__link {
+  text-decoration: underline;
+  color: #000000;
+}
+
+.about {
+  background-color: #ebebeb;
+  padding-bottom: 35px;
+}
+
+.about__header {
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about__header-subtitle {
+  max-width: 683px;
+  background-color: #000;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.about__subtitle {
+  padding: 75px 90px 75px 0;
+  font-family: "AkzidenzGrotesk";
+  font-size: 50px;
+  line-height: 0px;
+  font-weight: 600;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #ffffff;
+}
+
+.about__header-foto {
+  max-width: 683px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.about__list {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about__row {
+  margin-bottom: 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 49%;
+          flex: 0 1 49%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.about__text {
+  padding: 5px;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about__aside-subtitle {
+  color: #000000;
+}
+
+.about__aside-text {
+  color: #000000;
+}
+
+.contacts {
+  padding-top: 82px;
+}
+
+.contacts__user-info_text {
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 500;
+  color: #959595;
+  padding: 10px;
+  width: 374px;
+  background-color: #252525;
+  border: 2px solid #878787;
+}
+
+.contacts__title {
+  margin-bottom: 32px;
+  font-family: "AkzidenzGrotesk";
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #000000;
+}
+
+.contacts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contacts__items {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 51%;
+          flex: 0 1 51%;
+  margin-bottom: 24px;
+}
+
+.contacts__address {
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.contacts__tel {
+  color: #000000;
+}
+
+.contacts__social {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 22%;
+          flex: 0 1 22%;
+}
+
+.contacts__mail {
+  margin-bottom: 28px;
+  color: #000000;
+}
+
+.contacts__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacts__section {
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.contacts__map {
+  max-width: 683px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.contacts__user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0 50px 60px;
+  max-width: 683px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  background-color: #000;
+}
+
+.contacts__subtitle {
+  color: #ffffff;
+}
+
+.contacts__username {
+  height: 48px;
+}
+
+.contacts__usermail {
+  height: 48px;
+}
+
+.contacts__usermessage {
+  height: 100px;
+}
+
+.contacts__btn {
+  padding: 16px 25px;
+  color: #000000;
+  background-color: #fff;
+}
+
+.footer__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 126px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__info {
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #4d4d4d;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.footer__info a {
+  text-decoration: underline;
+  color: #4d4d4d;
+}
+
+.footer__logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
